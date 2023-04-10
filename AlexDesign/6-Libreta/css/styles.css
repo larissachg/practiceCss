@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    background-color: rgb(151, 171, 168);
+}
+
+.notebook { 
+    background-color: rgb(120, 75, 176);
+    width: 300px;
+    height: 400px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px white, 20px 20px rgba(0, 0, 0, 0.151);
+    padding-top: 1px;
+}
+
+.circule {
+    color: white;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 10px;
+    box-shadow: 0 40px, 0 80px, 0 120px, 0 160px, 0 200px, 0 240px, 0 280px, 0 320px;
+    padding-top: 1px;
+}
+
+.line {
+    color: aqua;
+    background-color: aqua;
+    width: 30px;
+    height: 8px;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-left: -20px;
+    box-shadow: 0 40px, 0 80px, 0 120px, 0 160px, 0 200px, 0 240px, 0 280px, 0 320px;
+}
+

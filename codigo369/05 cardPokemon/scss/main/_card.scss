@@ -1,0 +1,62 @@
+@use '../base/variables' as *;
+.main__container{
+    background-image: url(/img/fondoTop.svg), url(/img/fondoBotton.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background:white; 
+    text-align: center;
+    width: 32.8rem;
+    height: 45.7rem;
+    padding: 10rem 2rem 2rem 2rem;
+    border-radius: 2rem;
+
+    background-image: url(/img/fondoencabezado.svg);
+    background-repeat: no-repeat ;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.card__header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card__pokemon{
+background-color: $orangeCircleFondo;
+border-radius: 50%;
+padding: 2rem;
+border: 5px solid $orangeCircle;
+    img{
+           width: 100px;
+     }
+}
+ 
+
+.card__skills{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

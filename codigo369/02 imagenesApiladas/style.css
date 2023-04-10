@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(79, 215, 215);
+  font-family: sans-serif;
+}
+.pokemones__contain {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: -10px;
+  gap: 1rem;
+  transition: all .4s ease-in-out;
+}
+.pokemon img {
+  width: 150px;
+}
+
+.pokemon:hover {
+  transform: translateY(-80px);
+}
+
+.nombre {
+  display: none;
+  text-align: center;
+  background-color: black;
+  height: 60px;
+  padding-top: 1rem;
+  color: white;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    60% 75%,
+    50% 100%,
+    40% 75%,
+    0% 75%
+  );
+}
+
+.pokemon:hover .nombre {
+  display: initial;
+}

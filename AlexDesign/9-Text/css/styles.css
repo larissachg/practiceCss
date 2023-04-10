@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(75, 150, 201);
+    font-family: 'Roboto', sans-serif;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+}
+
+.card__body{
+    padding-left: 20px;
+    padding-right: 1px;
+}
+
+.card__head{
+    width: 100%;
+    height: 35%;
+    background-image: url(/9-Text/images/jordan-mcqueen-u9tAl8WR3DI-unsplash.jpg);
+    background-size: cover;
+}
+
+.card__date{
+    margin-top: 30px;
+    font-weight:100;
+}
+
+.card__title{
+    color: brown;
+    margin-top: 10px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.card__text{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.card__link{
+    color: white;
+    background-color: rgb(75, 150, 201);
+    display:  block;
+    width: 160px;
+    height: 40px;
+    margin-top: 25px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 9px;
+    font-weight: 100;
+}

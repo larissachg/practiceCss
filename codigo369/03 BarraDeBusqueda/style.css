@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.searchBarra{
+    margin: 3rem auto;
+    width: 95%;
+    border: 1px solid rgb(162, 162, 162);
+    border-radius: 50px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.searchBarra:focus-within{
+    border: 1px solid rgb(134, 132, 134);
+    box-shadow: 0 1px 5px rgb(172, 172, 172);
+}
+
+input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: auto;
+}
+
+.actions{
+    display: flex;
+    gap: 5px;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    color: rgb(134, 132, 134);
+}
+
+button:hover{
+    color: rgb(41, 121, 226);
+}
