@@ -1,0 +1,29 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+
+.footer{
+    position: absolute;
+    bottom: 3rem;
+    display: flex;
+    justify-content: end;
+
+    @include m.tablet{
+        justify-content: start;
+        position: unset;
+    }
+    
+    &__social{
+        display: flex;
+        gap: 1.5rem;
+
+        &-icon{
+            font-size: 3.5rem;
+            transition: .25s;
+
+            &:hover{
+                transform: translateY(-5px);
+            }
+        }
+    }
+}

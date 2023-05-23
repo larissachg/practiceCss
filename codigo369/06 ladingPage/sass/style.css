@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  background: radial-gradient(hsl(4, 84%, 58%), hsl(354, 88%, 44%));
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 78%;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+
+h1 {
+  line-height: 1.1;
+  font-weight: 300;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.header {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 9rem;
+}
+.header__nav {
+  display: flex;
+  gap: 3rem;
+}
+@media (min-width: 768px) {
+  .header__nav {
+    gap: 4rem;
+  }
+}
+
+.main {
+  position: relative;
+}
+.main__content {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .main__content {
+    margin: 10rem auto 5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .main__content {
+    justify-content: space-between;
+    margin: 12rem auto 6rem;
+  }
+}
+.main__info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+  font-size: 1.8rem;
+  width: 58%;
+}
+@media (min-width: 1024px) {
+  .main__info {
+    width: 35%;
+  }
+}
+.main__info-title {
+  font-size: 8rem;
+  text-transform: capitalize;
+}
+.main__info-title span {
+  font-weight: 700;
+}
+.main__info-text {
+  font-weight: 400;
+}
+.main__info-button {
+  background-color: white;
+  color: black;
+  padding: 2rem 5rem;
+  border-radius: 10rem;
+  transition: 0.25s;
+}
+.main__info-button:hover {
+  letter-spacing: 2px;
+}
+.main__photo {
+  width: 20rem;
+}
+@media (min-width: 768px) {
+  .main__photo {
+    width: 31rem;
+  }
+}
+@media (min-width: 1024px) {
+  .main__photo {
+    width: 55rem;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 3rem;
+  display: flex;
+  justify-content: end;
+}
+@media (min-width: 768px) {
+  .footer {
+    justify-content: start;
+    position: unset;
+  }
+}
+.footer__social {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer__social-icon {
+  font-size: 3.5rem;
+  transition: 0.25s;
+}
+.footer__social-icon:hover {
+  transform: translateY(-5px);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.header {
+  margin: 2rem;
+  @include m.flex();
+  justify-content: space-between;
+
+  &__logo {
+    width: 9rem;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 3rem;
+
+    @include m.tablet{
+      gap: 4rem;
+    }
+  }
+}
