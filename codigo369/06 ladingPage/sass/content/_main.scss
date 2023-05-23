@@ -1,0 +1,70 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.main {
+  position: relative;
+
+  &__content {
+    @include m.flex();
+
+    @include m.tablet {
+      margin: 10rem auto 5rem;
+    }
+
+    @include m.desktop {
+      justify-content: space-between;
+      margin: 12rem auto 6rem;
+    }
+  }
+
+  &__info {
+    @include m.flex();
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    font-size: 1.8rem;
+    width: 58%;
+    
+    @include m.desktop{
+        width: 35%;
+    }
+
+    &-title {
+      font-size: 8rem;
+      text-transform: capitalize;
+
+      & span {
+        font-weight: 700;
+      }
+    }
+
+    &-text {
+      font-weight: 400;
+    }
+
+    &-button {
+      background-color: $white;
+      color: $black;
+      padding: 2rem 5rem;
+      border-radius: 10rem;
+      transition: 0.25s;
+
+      &:hover{
+        letter-spacing: 2px;
+      }
+
+    }
+  }
+
+  &__photo {
+    width: 20rem;
+
+    @include m.tablet {
+      width: 31rem;
+    }
+
+    @include m.desktop {
+      width: 55rem;
+    }
+  }
+}
