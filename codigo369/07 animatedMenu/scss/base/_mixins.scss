@@ -1,0 +1,36 @@
+@use "../base/variables" as *;
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin backGround($light, $dark) {
+  background: linear-gradient(to right, $light, $dark);
+  
+  &::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, $light, $dark);
+    transition: 0.5s;
+    filter: blur(15px);
+    z-index: -1;
+  }
+}

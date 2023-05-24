@@ -1,0 +1,30 @@
+@use "variables" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $fontPrincipal;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
