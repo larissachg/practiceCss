@@ -1,0 +1,61 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.nav {
+  display: flex;
+  gap: 3rem;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    box-shadow: 0px 10px 25px $shadow;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+
+    &:hover {
+      width: 160px;
+    }
+
+    &:hover:first-child {
+      @include m.backGround($purpleLight, $purpleDark);
+    }
+    &:hover:nth-child(2) {
+      @include m.backGround($blueLight, $blueDark);
+    }
+
+    &:hover:nth-child(3) {
+      @include m.backGround($orangeLight, $orangeDark);
+    }
+
+    &:hover:nth-child(4) {
+      @include m.backGround($greenLight, $greenDark);
+    }
+
+    &:hover:last-child {
+      @include m.backGround($pinkLight, $pinkDark);
+    }
+  }
+
+  &__icon {
+    color: $gray;
+    font-size: 2.8rem;
+    position: absolute;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+
+  &__text {
+    transition: 0.5s;
+    transition-delay: 0.25s;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: white;
+    position: absolute;
+    transform: scale(0);
+  }
+}
