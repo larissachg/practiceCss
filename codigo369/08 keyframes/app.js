@@ -10,3 +10,5 @@ for (let i = 0; i < 39; i++) {
   bubble.style.animationDuration = `${getRandom(2, 7)}s`;
   bubblesArray.appendChild(bubble);
 }
+
+console.log('Hola');
