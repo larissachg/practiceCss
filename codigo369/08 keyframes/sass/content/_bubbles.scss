@@ -1,0 +1,15 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.bubbles {
+  display: flex;
+  &__circle {
+    background-color: $white;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px $aquaDark, 0 0 50px $purple, 0 0 100px $aqua;
+    margin: 0 4px;
+    // animation:  animate 15s linear infinite;
+  }
+}
