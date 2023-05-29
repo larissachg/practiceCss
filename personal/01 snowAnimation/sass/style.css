@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Bitter", serif;
+  overflow: hidden;
+}
+
+.container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: hsl(359, 62%, 30%);
+  width: 100vw;
+  height: 100vh;
+}
+.hero__snows {
+  padding: 2rem;
+}
+.hero__snows-icon {
+  width: 4rem;
+  animation: animate 3s linear infinite;
+}
+.hero__content {
+  text-align: center;
+  margin: 30rem auto;
+}
+.hero__content-title {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  font-size: 8rem;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-20vh) translateX(-20rem) scale(0.6);
+  }
+  100% {
+    transform: translateY(100vh) translateX(20rem) scale(0.1);
+  }
+}/*# sourceMappingURL=style.css.map */

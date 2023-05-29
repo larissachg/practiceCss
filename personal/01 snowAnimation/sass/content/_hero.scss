@@ -1,0 +1,38 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.hero {
+  background-color: $wine;
+  width: 100vw;
+  height: 100vh;
+
+  &__snows {
+    padding: 2rem;
+
+    &-icon {
+      width: 4rem;
+      animation: animate 3s linear infinite;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    margin: 30rem auto;
+
+    &-title {
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $white;
+      font-size: 8rem;
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-20vh) translateX(-20rem) scale(0.6);
+  }
+  100% {
+    transform: translateY(100vh)  translateX(20rem) scale(0.1);
+  }
+}
