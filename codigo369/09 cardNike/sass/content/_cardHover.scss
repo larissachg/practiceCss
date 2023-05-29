@@ -1,0 +1,57 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.cardHover{
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem 3rem;
+
+    &__section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.3rem;
+    }
+
+    &__text{
+        letter-spacing: .3rem;
+    }
+    
+    &__size{
+        background-color: $white;
+        color: $black;
+        padding: .5rem .8rem;
+        border-radius: 10%;
+    }
+
+    &__color{
+        width: 2rem;
+        height: 2rem;
+        background-color: $green;
+        border-radius: 50%;
+
+        &--blue{
+        background-color: $blue;
+        }
+
+        &--pink{
+            background-color: $pink;
+            }
+    }
+
+    &__button{
+        margin: 0 auto;
+        width: 120px;
+        padding: 1rem 0;
+        background-color: $aqua;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 1.7rem;
+        border-radius: 8px;
+    }
+}

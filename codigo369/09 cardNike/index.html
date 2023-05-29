@@ -8,33 +8,34 @@
     <title>Card Nike</title>
   </head>
   <body>
-    <div class="card">
+    <div class="contain">
+      <div class="card">
+        <i class="card__title">nike</i>
 
-      <div class="card__photo">
-        <img src="./img/z4.png" alt="Nike Shoes" />
-      </div>
-
-      <h1 class="card__content-name">nike shoes</h1>
-
-      <div class="card__content">
-
-        <div class="card__size">
-            <p class="card__text">size:</p>
-            <span class="card__size-number">7</span>
-            <span class="card__size-number">8</span>
-            <span class="card__size-number">9</span>
-            <span class="card__size-number">10</span>
+        <div class="card__photo">
+          <img class="card__photo-img" src="./img/z4.png" alt="Nike Shoes" />
         </div>
 
-        <div class="card__color">
-            <p class="card__text">color:</p>
-            <span class="card__color-circle"></span>
-            <span class="card__color-circle"></span>
-            <span class="card__color-circle"></span>
+        <div class="card__content">
+          <h1 class="card__content-name">nike shoes</h1>
+
+          <div class="card__content-hover cardHover">
+            <div class="cardHover__section">
+              <p class="cardHover__text">size:</p>
+              <span class="cardHover__size">7</span>
+              <span class="cardHover__size">8</span>
+              <span class="cardHover__size">9</span>
+              <span class="cardHover__size">10</span>
+            </div>
+            <div class="cardHover__section">
+              <p class="cardHover__text">color:</p>
+              <span class="cardHover__color"></span>
+              <span class="cardHover__color cardHover__color--blue"></span>
+              <span class="cardHover__color cardHover__color--pink"></span>
+            </div>
+            <button class="cardHover__button">buy now</button>
+          </div>
         </div>
-
-        <button class="card__button">buy now</button>
-
       </div>
     </div>
   </body>
