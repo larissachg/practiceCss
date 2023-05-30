@@ -1,0 +1,24 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.contain {
+  background-color: $dark;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    @include m.circle($orange, $pink);
+    transform: translate(-250px, -120px);
+  }
+
+  &::after {
+    @include m.circle($blue, $green);
+    width: 35rem;
+    height: 35rem;
+    transform: translate(250px, 150px);
+  }
+}
