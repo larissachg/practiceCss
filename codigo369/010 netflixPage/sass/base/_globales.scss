@@ -1,0 +1,37 @@
+@use "variables" as *;
+@use "../base/mixins" as m;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 0 5rem;
+
+  @include m.desktop{
+  padding: 0 10rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: $white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}

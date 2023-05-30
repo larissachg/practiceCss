@@ -1,0 +1,19 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.play {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  width: 22.6%;
+
+  &__icon {
+    width: 5rem;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+}
