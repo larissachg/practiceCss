@@ -1,0 +1,47 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.header {
+  padding-top: 3rem;
+  @include m.flexCol();
+  gap: 1.5rem;
+
+  @include m.desktop{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 15rem;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 2rem;
+
+    &-link {
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  &__search{
+    border: 1px solid $white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    padding: 0 .2rem 0 .5rem;
+
+    &-input{
+        padding: 1.2rem .5rem;
+        border: none;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        color: $white;
+        outline: none;
+        width: 100%;
+    }
+  }
+}

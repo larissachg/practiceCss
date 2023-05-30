@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./sass/style.css">
+    <title>Netflix Page</title>
+</head>
+<body>
+    <div class="contain">
+
+        <div class="header container">
+            <img class="header__logo" src="./img/logo.png" alt="logo">
+
+            <nav class="header__nav">
+                <a class="header__nav-link" href="#">Home</a>
+                <a class="header__nav-link" href="#">TV Shows</a>
+                <a class="header__nav-link" href="#">Movies</a>
+                <a class="header__nav-link" href="#">Latest</a>
+                <a class="header__nav-link" href="#">My List</a>
+            </nav>
+
+            <div class="header__search">
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+                <input class="header__search-input" type="text" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="movie container">
+            <img class="movie__name" src="./img/logoletras.png" alt="Movie Name">
+            <p class="movie__info">2022 | <span>16+</span> | 6 Temporadas | Serie</p>
+            <p class="movie__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic esse animi recusandae non dolore, magnam quo qui sunt nisi, aut voluptatum odio, mollitia sapiente provident soluta! Soluta amet libero nihil?</p>
+
+            <div class="movie__buttons">
+                <a class="movie__buttons-link movie__buttons-link--red" href="#">Play</a>
+                <a class="movie__buttons-link" href="#">My List</a>
+            </div>
+        </div>
+
+        <a href="#" class="play container">
+            <img class="play__icon" src="./img/play.png" alt="play">
+            <p class="play__text">watch trailer</p>
+        </a>
+
+        <section class="trailer">
+            <video class="trailer__video" src="./img/trailer.mp4" controls></video>
+            <img class="trailer__icon" src="./img/close.png" alt="close icon">
+        </section>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
