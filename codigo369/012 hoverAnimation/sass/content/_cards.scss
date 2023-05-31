@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.cards {
+  @include m.flexCol();
+  gap: 4rem;
+
+  @include m.tablet {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}

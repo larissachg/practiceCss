@@ -1,0 +1,9 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.content {
+  background-color: $ice;
+  padding: 5rem 0;
+  display: flex;
+  min-height: 100vh;
+}
