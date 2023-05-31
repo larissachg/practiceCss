@@ -1,0 +1,41 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, $ice, $iceDegray);
+  overflow: hidden;
+  position: relative;
+
+  &__figure {
+    position: absolute;
+    filter: blur(150px);
+    border-radius: 50%;
+
+    &:first-child {
+      width: 50rem;
+      height: 50rem;
+      background-color: $purple;
+      bottom: -150px;
+      left: 80px;
+    }
+
+    &:nth-child(2) {
+      width: 60rem;
+      height: 60rem;
+      background-color: $blue;
+      top: -350px;
+    }
+
+    &:nth-child(3) {
+      width: 30rem;
+      height: 30rem;
+      background-color: $ocean;
+      bottom: 50px;
+      right: 0;
+    }
+  }
+}

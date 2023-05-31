@@ -1,0 +1,29 @@
+@use "../base/variables" as *;
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin borderShadow {
+  box-shadow: 0 25px 45px $shadow;
+  border: 1px solid $border;
+}

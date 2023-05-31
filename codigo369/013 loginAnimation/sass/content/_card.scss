@@ -1,0 +1,132 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.card {
+  position: relative;
+
+  &__figure {
+    content: "";
+    border-radius: 10px;
+    @include m.borderShadow();
+    backdrop-filter: blur(5px);
+    background: $purpleBlock;
+    position: absolute;
+    animation: animate 10s linear infinite;
+
+    &:first-child {
+      top: 150px;
+      left: -100px;
+      width: 120px;
+      height: 120px;
+      z-index: 2;
+      animation-delay: -1s;
+    }
+
+    &:nth-child(2) {
+      top: -80px;
+      left: 120px;
+      width: 60px;
+      height: 60px;
+      z-index: 2;
+      animation-delay: -2s;
+    }
+
+    &:nth-child(3) {
+      top: -50px;
+      right: -70px;
+      width: 100px;
+      height: 100px;
+      animation-delay: -3s;
+    }
+
+    &:nth-child(4) {
+      bottom: 50px;
+      right: -60px;
+      width: 80px;
+      height: 80px;
+      z-index: 2;
+      animation-delay: -4s;
+    }
+
+    &:nth-child(5) {
+      bottom: -80px;
+      left: 100px;
+      width: 50px;
+      height: 50px;
+      animation-delay: -5s;
+    }
+  }
+
+  &__info {
+    position: relative;
+    width: 40rem;
+    padding: 4rem;
+    border-radius: 10px;
+    @include m.borderShadow();
+    @include m.flexCol();
+    gap: 3.5rem;
+    color: $white;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+  }
+
+  &__title {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 80px;
+      background-color: $white;
+      bottom: -7px;
+      border-radius: 3px;
+    }
+  }
+
+  &__form {
+    @include m.flexCol();
+    gap: 2rem;
+
+    &-input {
+      color: $white;
+      padding: 1rem 1.5rem;
+      background-color: $whiteDegray;
+      @include m.borderShadow();
+      border-radius: 35px;
+    }
+
+    &-button {
+      background: $white;
+      text-transform: capitalize;
+      color: $gray;
+      max-width: 100px;
+      padding: 1rem;
+      border-radius: 35px;
+      font-weight: 700;
+      font-size: 1.6rem;
+      @include m.borderShadow();
+      cursor: pointer;
+    }
+  }
+
+  &__links {
+    &-link {
+      line-height: 2.7rem;
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-40px);
+  }
+
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
