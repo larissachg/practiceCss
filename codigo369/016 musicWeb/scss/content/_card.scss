@@ -1,0 +1,24 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.card{
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  width: 35rem;
+  background: $ice;
+  box-shadow: 0 50px 80px $shadow;
+  
+  &__photo {
+      height: 35rem;
+
+    & img {
+        height: 100%;
+        object-fit: cover;
+    }
+  }
+
+  &__audio{
+    width: 100%;
+  }
+}
