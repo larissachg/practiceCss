@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $fontPrincipal;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: $black;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
