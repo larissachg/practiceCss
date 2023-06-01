@@ -1,0 +1,14 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    width: 10rem;
+  }
+  &__menu {
+    width: 3rem;
+  }
+}
