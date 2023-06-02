@@ -1,0 +1,46 @@
+@use "variables" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $fontPrincipal;
+  font-size: 1.6rem;
+  background-color: $blackbg;
+  color: $white;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    background: $grayScroll;
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $aqua;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: $black;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

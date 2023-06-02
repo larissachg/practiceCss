@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <title>Travel Web</title>
+  </head>
+  <body>
+    <div class="landing">
+      <img class="landing__background" src="./img/banner.jpg" alt="" />
+
+      <header class="header container">
+        <a class="header__logo" href="#">Travel</a>
+        <a class="header__menu" href="#">
+          <img src="./img/toggle.png" alt="menu" />
+        </a>
+      </header>
+
+      <div class="info container">
+        <h1 class="info__title">Explorar el mundo</h1>
+        <p class="info__text">
+          Explorar el mundo Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Voluptatum odit nostrum, omnis accusantium officia, in numquam
+          sit magni qui impedit veniam distinctio! Inventore praesentium, ipsa
+          temporibus voluptatibus quas sint quibusdam.
+        </p>
+        <a class="info__botton" href="#favorite">Ver mas</a>
+      </div>
+    </div>
+
+    <section class="favorite container" id="favorite">
+      <div class="favorite__text">
+        <h2 class="favorite__text-title">Siente la belleza del mundo</h2>
+        <p class="favorite__text-info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque qui
+          deleniti modi, quibusdam quaerat nemo suscipit reprehenderit deserunt
+          quasi? Mollitia commodi corrupti veniam labore praesentium. Quis, a
+          ab. Aliquam, quia?
+        </p>
+        <a class="favorite__text-button" href="#destination"
+          >Popular destination</a
+        >
+      </div>
+
+      <div class="favorite__photo">
+        <img src="./img/img1.jpg" alt="Popular destination" />
+      </div>
+    </section>
+
+    <section class="island">
+      <img class="island__photo" src="./img/banner2.jpg" alt="photo island" />
+    </section>
+
+    <section class="destination container" id="destination">
+      <h2 class="destination__title">
+        Los destinos de viaje mas populares del mundo
+      </h2>
+      <p class="destination__info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+        possimus error saepe, modi, non nesciunt quae quas consequuntur
+        doloribus, exercitationem natus tempora facere voluptatibus? Nostrum
+        amet officiis voluptates a quas?
+      </p>
+
+      <div class="destination__gallery gallery">
+        <div class="gallery__card">
+          <div class="gallery__card-photo">
+            <img src="./img/destination1.jpg" alt="destination" />
+          </div>
+
+          <div class="gallery__card-info">
+            <h3 class="gallery__card-position">destination one</h3>
+            <p class="gallery__card-name">country name</p>
+          </div>
+        </div>
+        <!--Card 1-->
+
+        <div class="gallery__card">
+          <div class="gallery__card-photo">
+            <img src="./img/destination2.jpg" alt="destination" />
+          </div>
+
+          <div class="gallery__card-info">
+            <h3 class="gallery__card-position">destination two</h3>
+            <p class="gallery__card-name">country name</p>
+          </div>
+        </div>
+        <!--Card 2-->
+
+        <div class="gallery__card">
+          <div class="gallery__card-photo">
+            <img src="./img/destination3.jpg" alt="destination" />
+          </div>
+
+          <div class="gallery__card-info">
+            <h3 class="gallery__card-position">destination three</h3>
+            <p class="gallery__card-name">country name</p>
+          </div>
+        </div>
+        <!--Card 3-->
+      </div>
+
+      <a class="destination__button" href="#socialMedia">Ver mas</a>
+    </section>
+
+    <section class="mountain">
+      <img
+        class="mountain__photo"
+        src="./img/banner3.jpg"
+        alt="photo mountain"
+      />
+    </section>
+
+    <footer class="footer container">
+      <div class="footer__nav" id="socialMedia">
+        <a class="footer__nav-link" href="#"
+          ><img src="./img/facebook.png" alt="facebook"
+        /></a>
+        <a class="footer__nav-link" href="#"
+          ><img src="./img/twitter.png" alt="twitter"
+        /></a>
+        <a class="footer__nav-link" href="#"
+          ><img src="./img/instagram.png" alt="instagram"
+        /></a>
+      </div>
+      <p class="footer__copyright">
+        Copyright ©2022 <a class="footer__copyright-link" href="#">Name</a>. All
+        rights reserved.>
+      </p>
+    </footer>
+  </body>
+</html>
