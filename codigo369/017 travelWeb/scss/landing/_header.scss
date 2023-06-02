@@ -1,0 +1,21 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.header {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+
+  &__logo {
+    font-size: 4rem;
+    color: $white;
+    font-weight: 800;
+  }
+
+  &__menu {
+    width: 4rem;
+  }
+}

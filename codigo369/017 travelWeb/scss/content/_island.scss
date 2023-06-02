@@ -1,0 +1,14 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.island {
+  @include m.landscape();
+
+  &::before {
+    @include m.shadowBefore();
+  }
+
+  &::after {
+    @include m.shadowAfter();
+  }
+}
