@@ -1,0 +1,17 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.content {
+  @include m.flex();
+  min-height: 100vh;
+  background-color: $purple;
+
+  &__boxes {
+    position: relative;
+    width: 100%;
+    @include m.flex();
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 30px auto;
+  }
+}

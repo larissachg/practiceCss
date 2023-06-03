@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  color: hsl(0, 0%, 100%);
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(258, 20%, 27%);
+}
+.content__boxes {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 30px auto;
+}
+
+.box {
+  position: relative;
+  width: 35rem;
+  height: 28rem;
+  border-radius: 2rem;
+  background: hsl(259, 24%, 35%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: 0.5s;
+  transition-delay: 0.2s;
+  position: absolute;
+  top: 0;
+}
+.box__icon span {
+  transform: scale(3);
+  transition: 0.8s;
+}
+.box__icon--1 {
+  background-color: hsl(204, 100%, 65%);
+}
+.box__icon--2 {
+  background-color: hsl(341, 97%, 69%);
+}
+.box__icon--3 {
+  background-color: hsl(146, 88%, 61%);
+}
+.box__icon--4 {
+  background-color: hsl(42, 100%, 52%);
+}
+.box__icon--5 {
+  background-color: hsl(154, 54%, 47%);
+}
+.box__icon--6 {
+  background-color: hsl(282, 100%, 67%);
+}
+.box__info {
+  text-align: center;
+  visibility: hidden;
+  transform: scale(0);
+  transition: 0.3s;
+  transition-delay: 0.2s;
+  margin-top: 8rem;
+}
+.box__info-name {
+  margin: 2rem auto 1rem;
+}
+.box__info-description {
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.box:hover .box__icon {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  transform: scale(1);
+  transition-delay: 0s;
+  top: 3rem;
+}
+.box:hover .box__icon span {
+  transform: scale(2);
+}
+.box:hover .box__info {
+  visibility: visible;
+  transform: scale(1);
+}/*# sourceMappingURL=style.css.map */

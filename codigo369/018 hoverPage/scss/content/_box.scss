@@ -1,0 +1,84 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.box {
+  position: relative;
+  width: 35rem;
+  height: 28rem;
+  border-radius: 2rem;
+  background: $purpleOpacity;
+  overflow: hidden;
+  @include m.flex();
+  flex-direction: column;
+
+  &__icon {
+    @include m.flex();
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    position: absolute;
+    top: 0;
+    
+    & span {
+      transform: scale(3);
+      transition: 0.8s;
+    }
+
+    &--1 {
+      background-color: $blue;
+    }
+    &--2 {
+      background-color: $pink;
+    }
+    &--3 {
+      background-color: $greenLight;
+    }
+    &--4 {
+      background-color: $orange;
+    }
+    &--5 {
+      background-color: $greenDark;
+    }
+    &--6 {
+      background-color: $purpleLight;
+    }
+  }
+
+  &__info {
+    text-align: center;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.3s;
+    transition-delay: 0.2s;
+    margin-top: 8rem;
+    &-name {
+      margin: 2rem auto 1rem;
+    }
+
+    &-description {
+      font-weight: 300;
+      line-height: 1.5em;
+    }
+  }
+
+  &:hover {
+    .box__icon {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      transform: scale(1);
+      transition-delay: 0s;
+      top: 3rem;
+
+      & span {
+        transform: scale(2);
+      }
+    }
+    .box__info {
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+}
