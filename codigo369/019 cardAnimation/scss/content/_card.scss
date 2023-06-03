@@ -1,0 +1,81 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.card {
+  width: 32rem;
+  height: 44rem;
+  border-radius: 15px;
+  box-shadow: inset 5px 5px 5px $borderGray, inset -5px -5px 5px $borderBeige,
+    5px 5px 5px $borderGray, -5px -5px 5px $borderBeige;
+  padding: 2rem;
+
+  &__box {
+    box-shadow: 0 10px 20px $shadow;
+    height: 100%;
+    border-radius: 15px;
+    padding: 0 2rem;
+    @include m.flex();
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+  }
+
+  &__content {
+    @include m.flex();
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+
+    &-number {
+      position: absolute;
+      top: -1rem;
+      right: 2rem;
+      font-size: 12.8rem;
+      z-index: 1;
+      color: $number;
+    }
+
+    &-name {
+      text-transform: capitalize;
+      color: $gray;
+      font-size: 2.8rem;
+    }
+
+    &-info {
+      color: $gray;
+      font-weight: 300;
+    }
+
+    &-button {
+      background-color: $blue;
+      color: $white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      box-shadow: 0 10px 20px $shadow;
+    }
+  }
+
+  &:hover {
+    .card__box {
+      background: linear-gradient(45deg, $purple, $purpleDark);
+      transform: translateY(-50px);
+      box-shadow: 0 40px 40px $shadowHover;
+      border: none;
+    }
+
+    .card__content {
+      &-number {
+        color: $borderGray;
+      }
+      &-name {
+        color: $white;
+      }
+      &-info {
+        color: $white;
+      }
+      &-button {
+        background-color: $pink;
+      }
+    }
+  }
+}
