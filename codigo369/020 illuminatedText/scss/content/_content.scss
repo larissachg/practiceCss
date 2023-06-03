@@ -1,0 +1,34 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.content {
+  background-color: $black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 500;
+    color: $gray;
+    letter-spacing: 5px;
+    cursor: pointer;
+
+    @include m.tablet {
+      font-size: 9rem;
+    }
+
+    span {
+      transition: 0.5s;
+    }
+
+    &:hover span {
+      margin: 0 2rem;
+      color: $white;
+      text-shadow: 0 0 10px $white, 0 0 20px $white, 0 0 40px $white,
+        0 0 80px $white, 0 0 120px $white, 0 0 160px $white;
+    }
+  }
+}
