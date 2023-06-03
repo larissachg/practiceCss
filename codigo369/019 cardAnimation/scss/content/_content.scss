@@ -1,0 +1,15 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.content {
+  @include m.flex();
+  min-height: 100vh;
+  background-color: $ice;
+
+  &__cards {
+    @include m.flex();
+    flex-wrap: wrap;
+    padding: 5rem 0;
+    gap: 6rem;
+  }
+}
