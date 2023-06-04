@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.6rem;
+}
+
+p {
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(hsl(0, 0%, 31%), hsl(0, 0%, 17%));
+}
+
+.toggle {
+  width: 30rem;
+  height: 15rem;
+  background-color: hsl(0, 0%, 24%);
+  border-radius: 20rem;
+  border: 5px solid hsl(0, 0%, 19%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.toggle input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.toggle input:checked ~ span {
+  left: 150px;
+  background: url(/img/Coffee_02.png);
+  background-size: cover;
+  transform: rotate(360deg);
+}
+.toggle input:checked ~ p {
+  color: hsl(0, 0%, 56%);
+  filter: none;
+}
+.toggle input:checked ~ p:last-child {
+  color: hsl(0, 0%, 100%);
+  filter: drop-shadow(0 0 15px hsl(0, 0%, 100%)) drop-shadow(0 0 35px hsl(0, 0%, 100%));
+}
+.toggle span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  width: 17.5rem;
+  height: 15rem;
+  background: url(../img/Coffee_01.png);
+  background-size: cover;
+  transform: rotate(-180deg);
+  transform-origin: 75px;
+  transition: 1.5s;
+}
+.toggle p {
+  position: absolute;
+  right: 33rem;
+  filter: drop-shadow(0 0 15px hsl(0, 0%, 100%)) drop-shadow(0 0 35px hsl(0, 0%, 100%));
+  transition: 0.7s;
+}
+.toggle p:last-child {
+  position: absolute;
+  left: 33rem;
+  color: hsl(0, 0%, 56%);
+  filter: none;
+}/*# sourceMappingURL=style.css.map */

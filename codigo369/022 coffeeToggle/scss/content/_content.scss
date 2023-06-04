@@ -1,0 +1,9 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+
+.content{
+    height: 100vh;
+    @include m.flex();
+    background: radial-gradient($bgLight, $bgDark);
+}

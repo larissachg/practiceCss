@@ -1,0 +1,63 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.toggle {
+  width: 30rem;
+  height: 15rem;
+  background-color: $brown;
+  border-radius: 20rem;
+  border: 5px solid $border;
+  @include m.flex();
+  cursor: pointer;
+  position: relative;
+
+  input {
+    appearance: none;
+
+    &:checked {
+      ~ span {
+        left: 150px;
+        background: url(/img/Coffee_02.png);
+        background-size: cover;
+        transform: rotate(360deg);
+      }
+
+      ~ p {
+        color: $brownText;
+        filter: none;
+      }
+
+      ~ p:last-child {
+        color: $white;
+        filter: drop-shadow(0 0 15px $white) drop-shadow(0 0 35px $white);
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    width: 17.5rem;
+    height: 15rem;
+    background: url(../img/Coffee_01.png);
+    background-size: cover;
+    transform: rotate(-180deg);
+    transform-origin: 75px;
+    transition: 1.5s;
+  }
+
+  & p {
+    position: absolute;
+    right: 33rem;
+    filter: drop-shadow(0 0 15px $white) drop-shadow(0 0 35px $white);
+    transition: 0.7s;
+  }
+
+  & p:last-child {
+    position: absolute;
+    left: 33rem;
+    color: $brownText;
+    filter: none;
+  }
+}
