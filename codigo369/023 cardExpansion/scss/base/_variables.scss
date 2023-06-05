@@ -1,0 +1,24 @@
+//FONT
+$fontPrincipal: "Poppins", sans-serif;
+
+//RESPONSIVE DESIGN
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+//COLORS
+$white: hsl(0, 0%, 100%);
+$whiteTransparent: rgba(255, 255, 255, 0.274);
+$black: hsl(0, 0%, 0%);
+$gray: hsl(0, 0%, 20%);
+$ice: hsl(222, 100%, 98%);
+$shadow: hsla(0, 0%, 0%, 0.05);
+$greenLight: hsl(120, 87%, 70%);
+$greenDark: hsl(108, 62%, 49%);
+$blueLight: hsl(187, 98%, 51%);
+$blueDark: hsl(212, 78%, 57%);
+$purpleLight: hsl(303, 100%, 79%);
+$purpleDark: hsl(309, 58%, 50%);
+$orangeLight: hsl(44, 99%, 52%);
+$orangeDark: hsl(2, 97%, 70%);
+$after: rgba(0, 0, 0, 0.1);

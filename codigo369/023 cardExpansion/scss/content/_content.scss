@@ -1,0 +1,10 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.content{
+    width: 100%;
+    height: 100vh;
+    background-color: $ice;
+    @include m.flex();
+    justify-content: center;
+}

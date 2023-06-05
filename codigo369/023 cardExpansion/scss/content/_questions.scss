@@ -1,0 +1,11 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.questions{
+    @include m.flex();
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    width: 60rem;
+    color: $gray;
+}
