@@ -1,0 +1,38 @@
+@use "variables" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $fontPrincipal;
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: $black;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
