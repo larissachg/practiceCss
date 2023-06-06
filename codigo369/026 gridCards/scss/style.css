@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: hsl(0, 0%, 13%);
+  color: hsl(0, 0%, 100%);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-weight: 300;
+}
+
+.header {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(60, 1%, 27%);
+}
+.header__logo {
+  font-size: 2rem;
+}
+.header__buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header__buttons-link {
+  font-weight: 700;
+}
+.header__buttons-link--bg {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: hsl(0, 0%, 0%);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+.header__buttons-link--bg ion-icon {
+  font-size: 2rem;
+}
+
+.content {
+  margin: 6rem auto;
+  display: grid;
+  gap: 3rem;
+}
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+.content__column {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: hsl(307, 9%, 19%);
+  box-shadow: -9px -1px 35px -1px rgba(0, 0, 0, 0.46);
+  transition: 0.15s ease;
+}
+.card:hover {
+  box-shadow: 0 0 0 0.25rem hsl(90, 76%, 63%);
+}
+.card img {
+  width: 100%;
+}
+.card__info {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__info-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.card__info-button {
+  background-color: hsl(0, 0%, 13%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.card__info-button:hover {
+  color: hsl(90, 76%, 63%);
+}/*# sourceMappingURL=style.css.map */

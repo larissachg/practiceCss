@@ -1,0 +1,35 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.header {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $borderGray;
+
+  &__logo {
+    font-size: 2rem;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &-link {
+      font-weight: 700;
+    }
+    &-link--bg {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background-color: $black;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      ion-icon {
+        font-size: 2rem;
+      }
+    }
+  }
+}
