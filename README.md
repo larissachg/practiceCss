@@ -28,3 +28,10 @@
 | `24` | 24-avatarCard | [Ver](codigo369/24-avatarCard) |
 | `25` | 25-skateCard | [Ver](codigo369/25-skateCard) |
 | `26` | 26-gridCards | [Ver](codigo369/26-gridCards) |
+
+## ⌨️ Proyectos Personales CSS
+
+| Número | Proyecto | Código | Web |
+| --- | --- | --- | --- |
+| `01` | 01-snowAnimation | [Ver](codigo369/01-snowAnimation) |
+| `02` | 02-tailwindProject | [Ver](codigo369/02-tailwindProject) |
